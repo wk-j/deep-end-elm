@@ -1,0 +1,19 @@
+{
+  "name": "deep-end-elm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "elm-make src/Main.elm --output output/elm.js",
+    "build:watch": "chokidar '**/*.elm' -c 'npm run build'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "photonkit": "^0.1.2"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0"
+  }
+}
