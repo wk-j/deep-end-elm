@@ -9,9 +9,12 @@ type Optional a = Some a | None
 headerN = 
     header 
         [ class "toolbar toolbar-header" ] 
-        [ div [ class "toolbar-actions" ] []
-        , button [ class "btn btn-default pull-right"] 
-            [span [ class "icon icon-facebook"] []]
+        [ div 
+            [ class "toolbar-actions" ] 
+            [ button 
+                [ class "btn btn-default pull-right"] 
+                [span [ class "icon icon-facebook"] []]
+            ]
         ]
 
 footerN = 
@@ -29,4 +32,5 @@ windowN =
         [ class "window" ]
         [ headerN
         , contentN
-        , footerN ]
+        , footerN 
+        ]
