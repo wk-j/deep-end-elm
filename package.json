@@ -6,7 +6,7 @@
   "scripts": {
     "build": "elm-make src/Main.elm --output output/elm.js",
     "build:watch": "chokidar '**/*.elm' -c 'npm run build'",
-    "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=images/large-round.icns --prune=true --out=builds"
+    "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=images/large-round.icns --prune=false --out=builds"
   },
   "license": "ISC",
   "dependencies": {
