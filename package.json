@@ -1,19 +1,20 @@
 {
   "name": "deep-end-elm",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "productName": "DE ELM @2017",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "elm-make src/Main.elm --output output/elm.js",
-    "build:watch": "chokidar '**/*.elm' -c 'npm run build'"
+    "build:watch": "chokidar '**/*.elm' -c 'npm run build'",
+    "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=images/large-round.icns --prune=true --out=builds"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "photonkit": "^0.1.2"
   },
   "devDependencies": {
-    "chokidar-cli": "^1.2.0"
+    "chokidar-cli": "^1.2.0",
+    "electron": "^1.6.11",
+    "electron-packager": "^8.7.2"
   }
 }
