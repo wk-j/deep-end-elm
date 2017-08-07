@@ -11,19 +11,17 @@ type Msg = Play String
 
 headerN : Html msg
 headerN = 
-    header 
-        [ class "toolbar toolbar-header"] 
-        [ div   [ class "toolbar-actions" ] 
-                [ button    [ class "btn btn-default pull-right" ] 
-                            [span   [ class "icon icon-facebook" ] 
-                                    [] 
+    header  [ class "toolbar toolbar-header"] 
+            [ div   [ class "toolbar-actions" ] 
+                    [ button    [ class "btn btn-default pull-right" ] 
+                                [span   [ class "icon icon-facebook" ] 
+                                        [] 
                             ]
                 ]
         ]
         
 listItemN current video =
-    li 
-        [ classList [("list-group-item", True), ("active", current == video.source)] , onClick (Play video.source)]
+    li  [ classList [("list-group-item", True), ("active", current == video.source)] , onClick (Play video.source)]
         [ img   [ classList [("img-circle media-object pull-left",True)], src "images/large-round.png", width 32, height 32] 
                 []
         , div   [ class "media-body"] 
@@ -40,9 +38,10 @@ listGroupN model =
 
 footerN : Html msg
 footerN = 
-    footer 
-        [class "toolbar toobar-footer"]
-        [ h1 [class "title"] [] ]
+    footer  [class "toolbar toobar-footer"]
+            [ h1    [class "title"] 
+                    [] 
+            ]
 
 contentN model = 
     div [class "window-content"]
