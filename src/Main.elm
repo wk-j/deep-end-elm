@@ -64,9 +64,9 @@ windowN model =
 
 model : Model
 model = 
-    { currentVideo = "https://www.youtube.com/embed/NCXfKyfpBKI?ecver=1&autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1", 
+    { currentVideo = "https://www.youtube.com/embed/bg6QV2JEPvI?ecver=1&autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1", 
       videos = [
-            { title = "Deep End", source = "https://www.youtube.com/embed/NCXfKyfpBKI?ecver=1&autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1" },
+            { title = "Deep End", source = "https://www.youtube.com/embed/bg6QV2JEPvI?ecver=1&autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1" },
             { title = "Heart Stop", source = "https://www.youtube.com/embed/lBN9VDFDvOk?ecver=1&autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1" },
             { title = "Strangled Love", source = "https://www.youtube.com/embed/zeP7bqMySmE?ecver=1&autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1" } 
       ]}
